@@ -28,6 +28,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Login screen for user.
+ */
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText mEtUserName,mEtPassword;
@@ -155,7 +158,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
             try{
                 ServiceHandler handler = new ServiceHandler();
 
-                List<NameValuePair> nameValuePair = new ArrayList<NameValuePair>(2);
+                List<NameValuePair> nameValuePair = new ArrayList<NameValuePair>();
                 nameValuePair.add(new BasicNameValuePair("username",params[0] ));
                 nameValuePair.add(new BasicNameValuePair("password", params[1]));
 
