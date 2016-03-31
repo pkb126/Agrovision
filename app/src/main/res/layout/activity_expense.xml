@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.praveenbhati.agrovision.ExpenseActivity">
+
+    <ListView
+        android:id="@+id/activity_expanse_lv_expanse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/activity_expanse_tv_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Expanse found"
+        android:textColor="@color/green"
+        android:drawableTop="@android:drawable/ic_dialog_alert"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:gravity="center"/>
+</RelativeLayout>

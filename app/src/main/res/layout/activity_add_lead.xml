@@ -1,0 +1,533 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.praveenbhati.agrovision.AddLeadActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/contact_title"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_person_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/firstNameHint"
+                android:inputType="text">
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_person_middlename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/middleNameHint"
+                android:layout_marginTop="5dp"
+                android:inputType="text">
+
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_person_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:layout_marginTop="5dp"
+                android:hint="@string/lastNameHint"
+                android:inputType="text">
+
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/companyHint"
+                android:inputType="text" />
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background" />
+
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_mob_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/mobileHint"
+                android:inputType="number"
+                android:maxLength="10" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="@string/mobileTitle" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_phone_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/phoneHint"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/emailHint"
+                android:inputType="textEmailAddress" />
+
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/addressHint"
+                android:inputType="textMultiLine"
+                android:lines="4" />
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_taluka"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+
+
+<!--
+            <EditText
+                android:id="@+id/activity_add_lead_et_pincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/pincodeHint"
+                android:inputType="number"
+                android:maxLength="6" />
+-->
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/interestTitle"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_interest_in"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background" />
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_interest_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/rateHint" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_quantiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/quantityHint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_total_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:enabled="false"
+                android:hint="@string/totalHint" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_landarea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/landarea" />
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_customer_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background" />
+
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_requirement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background" />
+
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_response"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background" />
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_quat_hardcopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background" />
+
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/bankDetailTitle"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_bank_relation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_bank_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/bankname" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_branch_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/branchname" />
+
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/appointTitle"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/appointSubTitle" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:focusable="false"
+                android:hint="@string/dateHint"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:focusable="false"
+                android:hint="@string/timeHint"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_startwork"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:focusable="false"
+                android:hint="@string/dateStartWorkHint"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_closelead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:focusable="false"
+                android:hint="@string/dateCloseLeadHint"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/additionalTitle"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_lead_et_cust_req"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/custReqHint"
+                android:inputType="textMultiLine"
+                android:lines="4" />
+
+           <!-- <Spinner
+                android:id="@+id/activity_add_lead_sp_business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_business_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>-->
+        </LinearLayout>
+
+        <!--<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/otherTitle"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_transfer_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+        </LinearLayout>
+-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/schemeTitle"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_scheme_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/activity_add_lead_sp_scheme_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background">
+
+            </Spinner>
+        </LinearLayout>
+        <Button
+            android:id="@+id/activity_add_lead_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/addLead"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

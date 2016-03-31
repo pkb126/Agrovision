@@ -1,0 +1,422 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.praveenbhati.agrovision.AddExpenseActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/expense_title"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:focusable="false"
+                android:hint="@string/expenseDateHint"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/expenseDesHint"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/route_title"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/fromHint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_via1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/viaHint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_via2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/viaHint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_via3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/viaHint"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/toHint"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/travel_title"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_startkm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/startKmHint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_endkm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/endKmHint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_totalkm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/totalKmHint"
+                android:enabled="false"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_travel_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/totalRupees"
+                android:enabled="false"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/lodging_title"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_lodging_particular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/particularHint"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_lodging_bill_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/billNo"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_lodging_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/totalRupees"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/allowance_title"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_allow_particular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/particularHint"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_allow_bill_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/billNo"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_allow_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/totalRupees"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/pandt_title"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_pandt_particular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/particularHint"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_pandt_bill_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/billNo"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_pandt_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/totalRupees"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/trans_title"
+            android:textColor="#5260b1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_trans_particular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="top|start"
+                android:hint="@string/particularHint"
+                android:inputType="textMultiLine"
+                android:lines="3" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_trans_bill_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/billNo"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_trans_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/totalRupees"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Day Exp in Rupees"
+
+                />
+
+            <EditText
+                android:id="@+id/activity_add_expanse_et_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="false"
+                android:background="@drawable/edittext_background"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_add_expanse_btn_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/addExpense"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/row_lead_tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_name"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Praveen Bhati" />
+
+        <TextView
+            android:id="@+id/row_lead_tv_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mobile"
+            android:textColor="@color/black"
+            android:drawablePadding="5dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="8446115291" />
+        <ImageButton
+            android:id="@+id/row_lead_ib_addcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_addcontact"
+            android:padding="5dp"
+            android:background="#00000000"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/row_lead_tv_product"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"
+        android:text="POLY HOUSE" />
+
+    <TextView
+        android:id="@+id/row_lead_tv_subproduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"
+        android:text="FLAT TYPE(6*6 SPAN 5 MTR HEIGHT)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/row_lead_tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_date"
+            android:textColor="@color/black"
+            android:drawablePadding="5dp"
+            android:text="2015-4-05" />
+
+        <TextView
+            android:id="@+id/row_lead_tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_status"
+            android:drawablePadding="5dp"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            android:text="New" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp">
+
+        <TextView
+            android:id="@+id/row_lead_tv_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_amount"
+            android:drawablePadding="5dp"
+            android:textColor="@color/black"
+            android:text="15000" />
+
+        <ImageButton
+            android:id="@+id/row_lead_ib_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:src="@drawable/ic_update" />
+
+        <ImageButton
+            android:id="@+id/row_lead_ib_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:padding="5dp"
+            android:src="@drawable/ic_update_status" />
+
+    </LinearLayout>
+
+</LinearLayout>

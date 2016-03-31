@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">Agrovision</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_addlead">Add Lead</string>
+    <string name="action_addexpanse">Add Expanse</string>
+    <string name="action_logout">Logout</string>
+    <string name="username">Enter your username</string>
+    <string name="password">Enter your password</string>
+    <string name="title_activity_main">Your Leads</string>
+    <string name="title_activity_add_lead">Add New Lead</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_appoint">Appointment</string>
+    <string name="title_activity_splash">SplashActivity</string>
+
+
+
+    <string-array name="categories">
+        <item>Select category</item>
+        <item>FARMER</item>
+        <item>BANKER</item>
+        <item>LEADER</item>
+        <item>KRUSHI SAHAYAK</item>
+        <item>TALATHI</item>
+        <item>GRAMSEWAK</item>
+        <item>SARAPANCH</item>
+        <item>CHAIRMAN</item>
+        <item>VIA CHAIRMAN</item>
+        <item>BANK AO</item>
+        <item>BANK MANAGER</item>
+        <item>AGENT</item>
+        <item>OWNER OF KSK</item>
+        <item>DAIRY OWNER</item>
+        <item>BUSINESSMAN</item>
+        <item>TRUST / FIRMS</item>
+    </string-array>
+    
+    <string-array name="customer_response">
+        <item>Select Customer Response</item>
+        <item>HOT</item>
+        <item>WARM</item>
+        <item>COLD</item>
+    </string-array>
+    
+    <string-array name="requirement">
+        <item>Select Requirement</item>
+        <item>VISIT TO PROJECT ESTABLISHED</item>
+        <item>VISIT OF MANAGER</item>
+        <item>MEETING WITH MANAGER</item>
+        <item>INTERSTED TO VISIT WORKSHOP </item>
+        <item>INTERSTED IN GETTING INFO ABOUT CROP PLANNIG</item>
+        <item>WANT TO VISIT OFFICE</item>
+        <item>OTHER</item>
+
+    </string-array>
+    
+    <string-array name="response">
+        <item>Select Response About Price</item>
+        <item>AS PER THEIR EXPECTATION</item>
+        <item>AS PER HIGHER SIDE</item>
+        <item>AS PER LOWER SIDE</item>
+    </string-array>
+
+    <string-array name="quotation_hard">
+        <item>Select Quotation Hard Copy Given</item>
+        <item>Yes</item>
+        <item>No</item>
+
+    </string-array>
+
+    <string-array name="bank_relation">
+        <item>Select Bank Relation</item>
+        <item>Existing</item>
+        <item>New</item>
+    </string-array>
+
+
+    <string-array name="scheme_type">
+        <item>Select Scheme Type</item>
+        <item>NHB</item>
+        <item>NHM</item>
+    </string-array>
+
+    <string-array name="scheme_status">
+        <item>Select Scheme Status</item>
+        <item>APPLIED</item>
+        <item>NOT APPLIED</item>
+        <item>LOI RECEIVED</item>
+        <item>LOI IN PROGRESS</item>
+    </string-array>
+
+    <!--Add new Lead hint-->
+    <string name="contact_title">Contact Information</string>
+    <string name="firstNameHint">Person First Name</string>
+    <string name="middleNameHint">Person Middle Name</string>
+    <string name="lastNameHint">Person Last Name</string>
+    <string name="companyHint">Company Name</string>
+    <string name="mobileHint">Mobile Number *</string>
+    <string name="mobileTitle">Valid mobile number is required</string>
+    <string name="phoneHint">Phone Number</string>
+    <string name="emailHint">Email ID *</string>
+    <string name="addressHint">Address Detail</string>
+    <string name="pincodeHint">Pin Code</string>
+    <string name="interestTitle">Interest(s)</string>
+    <string name="rateHint">Rate *</string>
+    <string name="quantityHint">Quantity *</string>
+    <string name="totalHint">Total Amount *</string>
+    <string name="appointTitle">Appointment Details</string>
+    <string name="appointSubTitle">Please provide the date/time when the prospect/lead should be contacted.</string>
+    <string name="dateHint">Date of Appointment</string>
+    <string name="timeHint">Contact Time</string>
+    <string name="additionalTitle">Additional Details</string>
+    <string name="custReqHint">Customer Requirement</string>
+    <string name="otherTitle">Other Details</string>
+    <string name="addLead">Add Lead</string>
+    <string name="action_database">Database</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+    <string name="landarea">Land Holding Area</string>
+    <string name="bankDetailTitle">Bank Details</string>
+    <string name="bankname">Enter Bank Name</string>
+    <string name="branchname">Enter Branch Name</string>
+    <string name="dateStartWorkHint">Start of work</string>
+    <string name="dateCloseLeadHint">Closing of lead</string>
+    <string name="title_activity_expanse">Your Expanse</string>
+    <string name="title_activity_add_expanse">Add Expanse</string>
+    <string name="expense_title">Expense Detail</string>
+    <string name="expenseDateHint">Select Expense Date</string>
+    <string name="expenseDesHint">Enter Expense Description</string>
+    <string name="route_title">Route Detail</string>
+    <string name="fromHint">From</string>
+    <string name="viaHint">Via</string>
+    <string name="toHint">To</string>
+    <string name="addExpense">Add Expense</string>
+    <string name="travel_title">Traveling Detail</string>
+    <string name="startKmHint">Starting KM</string>
+    <string name="endKmHint">End KM</string>
+    <string name="totalKmHint">Total KM</string>
+    <string name="totalRupees">Total Expense in Rupees</string>
+    <string name="schemeTitle">Scheme Details</string>
+    <string name="lodging_title">Lodging</string>
+    <string name="particularHint">Particular (Specify)</string>
+    <string name="billNo">Bill No.</string>
+    <string name="allowance_title">Day Allowance</string>
+    <string name="pandt_title">Printing and Stationary</string>
+    <string name="trans_title">Transportation</string>
+    <string name="action_expense">Add Expense</string>
+
+</resources>
